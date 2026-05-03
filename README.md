@@ -46,19 +46,6 @@ Rust is used as the implementation language for performance and safety, but it i
 
 ---
 
-### ABI Layer (C-Compatible Interface)
-SylinthUI exposes a stable C ABI allowing integration with multiple languages, including but not limited to:
-- C++
-- C#
-- Rust
-- Python
-- Go
-- and any language supporting FFI
-
-This layer acts as the bridge between host applications and the UI runtime.
-
----
-
 ### Rendering Layer (WebView Engine)
 The UI is rendered using native platform WebView technologies:
 
