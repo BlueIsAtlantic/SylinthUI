@@ -1,11 +1,8 @@
 SylinthUI License
 Copyright (c) 2026 BlueIsAtlantic. All Rights Reserved.
 
-
 SylinthUI is free for personal, hobby, and non-commercial use. This includes
-personal projects, open source projects that generate no revenue, and game
-modifications where monetization is prohibited by the game's Terms of Service
-(such as GTA V mods).
+personal projects, open source projects that generate no revenue.
 
 Any commercial use — meaning any product, tool, or service that generates
 revenue or commercial benefit — requires a paid commercial license obtained
@@ -14,10 +11,6 @@ from the creator prior to use or distribution.
 Redistribution or repackaging of SylinthUI, in whole or in part, under any
 name or form, is not permitted without explicit written permission from the
 creator.
-
-To inquire about a commercial license, contact:
-blueisatlantic [at] [contact details to be added]
-
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
