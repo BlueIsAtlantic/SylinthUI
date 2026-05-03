@@ -1,4 +1,4 @@
-# SylithUI
+# SylinthUI
 
 The perfect choice for people which prefer custom, sleek UI solution while maintaining full functionality.
 
