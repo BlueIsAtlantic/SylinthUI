@@ -1,0 +1,21 @@
+SylinthUI License
+Copyright (c) 2026 BlueIsAtlantic. All Rights Reserved.
+
+SylinthUI is free for personal, hobby, and non-commercial use. This includes
+personal projects, open source projects that generate no revenue.
+
+Any commercial use — meaning any product, tool, or service that generates
+revenue or commercial benefit — requires a paid commercial license obtained
+from the creator prior to use or distribution.
+
+Redistribution or repackaging of SylinthUI, in whole or in part, under any
+name or form, is not permitted without explicit written permission from the
+creator.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
