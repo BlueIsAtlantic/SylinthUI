@@ -1,5 +1,7 @@
 # SylinthUI
 
+[Website](https://blueisatlantic.github.io/blueisatlantic-projects/sylinth.html) | [Discord](https://discord.gg/Zw42bNmhKJ)
+
 SylinthUI is a cross-platform native UI runtime designed for rendering real-time interactive interfaces using platform WebView engines.
 
 It exposes a C-compatible ABI for integration with any programming language that supports calling native C/C++ libraries.
