@@ -128,13 +128,62 @@ extern "C" {
 
     // ── Run ───────────────────────────────────────────────────────
 
-    /** Enter the event loop. BLOCKS until window closes. */
+    /** Start the window event loop on an internal OS thread. Returns immediately to the caller. */
     void sylinth_run(SylinthHandle* handle);
 
     // ── Info ──────────────────────────────────────────────────────
 
     const char* sylinth_version();
 
+    // ── Emit to JS ───────────────────────────────────────────────
+
+    /**
+     * Fire a named event with a JSON payload into the JS page.
+     * Safe to call from any thread while the window is running.
+     *
+     * On the JS side, listen with:
+     *   Sylinth.on('eventName', (data) => { ... });
+     *
+     * Example:
+     *   sylinth_emit(ui, "tornadoSpawned", "{\"intensity\":3,\"follow\":true}");
+     *   sylinth_emit(ui, "healthUpdated",  "{\"hp\":80,\"max\":100}");
+     *   sylinth_emit(ui, "menuClosed",     "{}");
+     */
+    void sylinth_emit(
+        SylinthHandle* handle,
+        const char* event_name,
+        const char* payload
+    );
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
+
+// ============================================================
+//  GTA V mod usage example:
+//
+//  SylinthHandle* ui = sylinth_create_percent(
+//      "TornadoV", 70.0f, 75.0f,          // 70% x 75% of screen
+//      "file:///C:/TornadoV/ui/index.html", 0
+//  );
+//
+//  sylinth_set_initial_position_aligned(ui, "center", "center");
+//  sylinth_set_initial_corners(ui, "round");
+//  sylinth_set_initially_on_top(ui, 1);    // always above GTA V
+//  sylinth_set_initially_visible(ui, 0);   // start hidden
+//  sylinth_set_initially_interactive(ui, 0);
+//
+//  sylinth_on(ui, "sylinth:ready", on_ready);
+//  sylinth_on(ui, "sylinth:close", on_close);
+//
+//  // On F5 keypress:
+//  void toggle_menu() {
+//      g_open = !g_open;
+//      sylinth_set_visible(ui, g_open);
+//      sylinth_set_interactive(ui, g_open);
+//      sylinth_set_focus_lock(ui, g_open); // lock while open, release when closed
+//  }
+//
+//  sylinth_run(ui);
+//  sylinth_destroy(ui);
+// ============================================================
